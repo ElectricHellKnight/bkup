@@ -5,7 +5,7 @@ You ever go to edit a config file and simply add a .old or a .bak? You know, you
 
 I find this to be a little messy and got sick of always manually copying and specifying the timestamp, so I made this.
 
-Make a root folder for your backups (I like to use /bak/hostname). Then edit the script and put that path in the top variable. Then just run:
+Make a root folder for your backups (I like to use /bak/hostname) and make sure you have write permissions to it. Then edit the script and put that path in the top variable. Then just run:
 
 bkup /some/directory/file.fil
 
