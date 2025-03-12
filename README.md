@@ -12,5 +12,7 @@ bkup /some/directory/file.fil /some/other/directory/conf.conf
 and it will create:
 
 /your/backup/path/some/directory/file.fil_MMDDYYYY_HHMM
+
 and
+
 /your/bakup/path/some/other/directory/conf.conf
