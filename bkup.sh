@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Easily copy from /some/directory/file.fil to /some/backup/location/file.fil_MMDDYYYY_HHMM"
+# Easily copy from /some/directory/file.fil to /some/backup/location/file.fil_MMDDYYYY_HHMMSS"
 
 bpth="/YOUR/BACKUP/DIRECTORY"
 
@@ -18,7 +18,7 @@ else
                 path=$(get_path "$i")   # Run the function to get the full path, minus the filename
                 base=$(basename "$i")   # Get the file name, without the path
                 mkdir -p "$bpth/$path"
-                cp "$file" "$bpth/$path/${base}_$(date +%m%d%Y_%H%M)"
+                cp "$file" "$bpth/$path/${base}_$(date +%m%d%Y_%H%M%S)"
         done
 
 fi
