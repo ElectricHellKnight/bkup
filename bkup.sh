@@ -2,6 +2,8 @@
 
 # Easily copy from /some/directory/file.fil to /some/backup/location/file.fil_MMDDYYYY_HHMMSS"
 
+
+# You must set this path and appropriate perms
 bpth="/YOUR/BACKUP/DIRECTORY"
 
 if [[ $# -eq 0 ]] ; then
